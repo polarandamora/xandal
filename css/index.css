@@ -1,0 +1,244 @@
+/*** HERO SECTION ***/
+section {
+  padding: var(--v80) 0;
+}
+
+#hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero .container .hero-image {
+  flex: 1;
+  margin-right: var(--h20);
+}
+
+#hero .container .hero-image img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 500px;
+  border-radius: var(--borde-radio);
+}
+
+#hero .container .hero-content {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero .container .hero-content h1 {
+  font-family: var(--fuente-titulos);
+  font-size: 2.5em;
+  color: var(--color-texto);
+  line-height: 1.2;
+}
+
+#hero .container .hero-content p {
+  font-size: 1.1em;
+}
+
+/*** CONTENT SECTION ***/
+.content-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--h20);
+}
+
+.content-section .container .image-side {
+  flex: 1;
+}
+
+.content-section .container .image-side img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 500px;
+  border-radius: var(--borde-radio);
+  box-shadow: 0 0 15px var(--color-texto);
+}
+
+.content-section .text-side {
+  flex: 1;
+  max-width: 500px;
+}
+
+.content-section .text-side h2 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-texto);
+  margin-bottom: var(--v20);
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0 5px 10px var(--color-hover);
+}
+
+.content-section .text-side p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/***ESTILOS PARA LA INFOGRAFIA DE 3 ***/
+.infografia {
+  position: relative;
+  width: 350px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.text-side .infografia p {
+  width: 150px;
+  font-size: 1em;
+  height: 150px;
+  font-family: var(--fuente-artistica);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  padding: 8px;
+  color: var(--color-principal);
+  background-color: white;
+}
+
+/* Círculo superior */
+.infografia p:first-child {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px var(--color-principal);
+  border: 1px solid var(--color-principal);
+  color: var(--color-principal);
+}
+
+/* Círculo inferior izquierdo */
+.infografia p:nth-child(2) {
+  bottom: 10px;
+  left: 0;
+  box-shadow: 0 0 15px var(--color-texto);
+  border: 1px solid var(--color-texto);
+  color: var(--color-texto);
+}
+
+/* Círculo inferior derecho */
+.infografia p:nth-child(3) {
+  bottom: 10px;
+  right: 0;
+  box-shadow: 0 0 15px var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+  color: var(--color-secundario);
+}
+
+/* INFORGRAFIA DE 3 Nº2*/
+.infografia-3 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.infografia-3 p {
+  width: 150px;
+  height: 150px;
+  font-size: 1em;
+  font-family: "Delius Swash Caps", cursive;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-principal);
+  border-radius: 50%;
+  position: relative;
+  padding: 8px;
+  color: var(--color-principal);
+  box-shadow: 0 0 8px var(--color-principal);
+  background-color: white;
+}
+
+/* ESTILOS PARA LA INFORGRAFIA DE 6*/
+.infografia-position {
+  position: relative;
+}
+
+.infografia-position h3 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 1.5em;
+  color: var(--color-texto);
+}
+
+.infografia-6 {
+  position: relative;
+  width: auto;
+  height: 360px;
+  text-align: center;
+}
+
+.text-side .infografia-6 p {
+  width: 130px;
+  height: 130px;
+  font-size: 1em;
+  font-family: "Delius Swash Caps", cursive;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-principal);
+  border-radius: 50%;
+  position: absolute;
+  padding: 8px;
+  color: var(--color-principal);
+  box-shadow: 0 0 15px var(--color-principal);
+  background-color: white;
+}
+
+.infografia-6 p:nth-child(1) {
+  top: 0;
+  left: 25%;
+  transform: translateX(-25%);
+  box-shadow: 0 0 15px var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+}
+
+.infografia-6 p:nth-child(2) {
+  top: 0;
+  left: 75%;
+  transform: translateX(-75%);
+}
+
+.infografia-6 p:nth-child(3) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  box-shadow: 0 0 15px var(--color-texto);
+  border: 1px solid var(--color-texto);
+}
+
+.infografia-6 p:nth-child(4) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  box-shadow: 0 0 15px var(--color-texto);
+  border: 1px solid var(--color-texto);
+}
+
+.infografia-6 p:nth-child(5) {
+  top: 100%;
+  left: 25%;
+  transform: translate(-25%, -100%);
+}
+
+.infografia-6 p:nth-child(6) {
+  top: 100%;
+  left: 75%;
+  transform: translate(-75%, -100%);
+  box-shadow: 0 0 15px var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+}

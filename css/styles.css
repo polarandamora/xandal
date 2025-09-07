@@ -1,0 +1,91 @@
+/* Variables CSS (Custom Properties) */
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Delius+Swash+Caps&family=Jaro:opsz@6..72&display=swap");
+:root {
+  --color-principal: #5f4173; /* Morado principal */
+  --color-secundario: #ea3338; /* Rojo secundario (si lo usamos más adelante) */
+  --color-texto: #333333; /* Color del texto principal */
+  --color-texto-secundario: #6a6a6a; /* Color del texto principal */
+  --color-texto-blanco: #f8f8f8; /* Color del texto principal */
+  --color-fondo: #f8f8f8; /* Color de fondo general */
+  --color-fondo-header: #ffffff; /* Color de fondo del header */
+  --color-hover: #8c5eaa; /* Color de los enlaces al hacer hover */
+  --fuente-principal: "Lato", sans-serif; /* Fuente principal del sitio */
+  --fuente-titulos: "Raleway", sans-serif; /* Fuente para los títulos y logo */
+  --fuente-artistica: "Delius Swash Caps", cursive;
+  --ancho-maximo-contenedor: 1200px; /* Ancho máximo del contenedor */
+  --h20: 20px;
+  --h80: 80px;
+  --v20: 20px;
+  --v80: 80px;
+  --sombra-sutil: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --sombra-sutil-top: 0 -2px 4px rgba(0, 0, 0, .1);
+  --borde-radio: 5px;
+  --transicion-suave: 2s ease;
+  --transicion-rapida: .3s ease;
+}
+
+/* Estilos Generales *****************************/
+body {
+  font-family: var(--fuente-principal);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+b {
+  color: var(--color-principal);
+  text-shadow: 0 0 18px var(--color-hover); /* offset-x offset-y blur-radius color */
+}
+
+.container {
+  margin: 0 auto; /*vertical 0 auto=centrado*/
+  max-width: var(--ancho-maximo-contenedor);
+}
+
+/*** BUTTONS ***/
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: var(--borde-radio);
+  transition: background-color var(--transicion-rapida);
+}
+
+.button.primary {
+  background-color: var(--color-principal);
+  color: var(--color-texto-blanco);
+}
+
+.button.primary:hover {
+  background-color: var(--color-hover); /* Mantenemos el valor directo aquí por ahora */
+  box-shadow: var(--sombra-sutil);
+}
+
+.button.secondary {
+  background-color: transparent;
+  color: var(--color-principal);
+  border: none;
+}
+
+.button.secondary:hover {
+  background-color: var(--color-principal);
+  color: var(--color-texto-blanco);
+  box-shadow: var(--sombra-sutil);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-column {
+    min-width: 100%;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}

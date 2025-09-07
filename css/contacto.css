@@ -1,0 +1,78 @@
+/* Estilos de la Página de Contacto */
+#contacto-page {
+  padding: 60px 0;
+  background-color: var(--color-fondo);
+}
+
+#contacto-page .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el tamaño mínimo y máximo */
+  gap: 30px;
+  align-items: start; /* Alinear las secciones al inicio */
+}
+
+#contacto-info h2,
+#contacto-form h2{
+  font-family: var(--fuente-titulos);
+  color: var(--color-principal);
+  margin-bottom: 20px;
+}
+
+#contacto-info p {
+  margin-bottom: 15px;
+}
+
+#contacto-info .contact-links {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 20px; /* Espaciado entre los íconos */
+}
+
+#contacto-info .contact-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Tamaño del cuadrado */
+  height: 50px; /* Tamaño del cuadrado */
+  background-color: var(--color-principal); /* Fondo del cuadrado */
+  color: white; /* Color del ícono */
+  border-radius: var(--borde-radio); /* Bordes redondeados */
+  font-size: 24px; /* Tamaño del ícono */
+  transition: transform 0.3s ease; /* Animación al pasar el cursor */
+}
+
+#contacto-info .contact-links a:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+#contacto-map {
+  text-align: center; /* Centra el mapa */
+}
+
+#contacto-map iframe{
+  box-shadow: 0 0 35px var(--color-texto);
+  border-radius: var(--borde-radio);
+  margin-bottom: var(--h20);
+
+}
+
+#contacto-map a{
+  text-align: center;
+  color: var(--color-principal); 
+  text-decoration: none;
+  text-align: center;
+
+}
+
+/* Media query para hacer la disposición en una sola columna en pantallas más pequeñas */
+@media (max-width: 768px) {
+  #contacto-page .container {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+  #contacto-info,
+  #contacto-map {
+    margin-bottom: 30px; /* Añadir espacio entre las secciones en móvil */
+  }
+}

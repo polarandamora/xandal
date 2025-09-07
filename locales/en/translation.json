@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "XANDAL - Custom Tailoring",
+    "description": "XANDAL offers custom tailoring of personalized kits for schools and sports clubs. Handcrafted quality and local production in Barcelona.",
+    "keywords": "XANDAL, custom tailoring, personalized kits, schools, sports clubs, Barcelona"
+  },
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Custom-made Sportswear for Schools and Sports Clubs",
+    "subtitle": "We create high-quality <b>custom kits</b> to meet the needs of each team and educational center.",
+    "button_primary": "Get Your Team Ready With Us",
+    "button_secondary": "See Samples"
+  },
+  "manufactura": {
+    "title": "Artisanal Manufacturing",
+    "point1": "Premium Quality Fabrics",
+    "point2": "Attention to Detail and Personalization",
+    "point3": "Local Production"
+  },
+  "servicios": {
+    "title": "Professional Service",
+    "paragraph": "From the first idea to the final delivery, we are by your side to ensure that every detail meets your expectations. Therefore, we offer a comprehensive professional service designed to make the process easy, efficient, and completely adapted to your needs.",
+    "point1": "Personalized and Creative Advice",
+    "point2": "Custom Kit Design",
+    "point3": "Comprehensive Order Management"
+  },
+  "experiencia": {
+    "title": "More than 50 years of experience",
+    "subtitle": "Keys to Success",
+    "point1": "Personalized and Creative Advice",
+    "point2": "Comprehensive Order Management",
+    "point3": "Passion for manual creation and craftsmanship",
+    "point4": "Commitment to the client",
+    "point5": "Transmission of knowledge and family values",
+    "point6": "Building long-term relationships"
+  },
+  "gallery": {
+    "title": "Custom School and Sportswear",
+    "intro": "Explore our collection of custom pieces for schools, school clubs, and sports clubs.",
+    "filter_all": "All",
+    "filter_school": "Gowns",
+    "filter_sports": "Tracksuits",
+    "filter_dance": "Leotards"
+  },
+  "contact": {
+    "title": "Contact Information",
+    "intro": "We are here to help you. Do not hesitate to contact our team through the following means:"  },
+  "footer": {
+    "gallery_link": "Gallery",
+    "slogan": "Custom-made personalized kits for schools and sports clubs"
+  }
+}

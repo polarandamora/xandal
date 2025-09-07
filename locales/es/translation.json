@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "XANDAL - Confección a Medida",
+    "description": "XANDAL ofrece confección a medida de equipaciones personalizadas para escuelas y clubs deportivos. Calidad artesanal y producción de proximidad en Barcelona.",
+    "keywords": "XANDAL, confección a medida, equipaciones personalizadas, escuelas, clubs deportivos, Barcelona"
+  },
+  "nav": {
+    "home": "Inicio",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Confección a Medida para Escuelas y Clubs Deportivos",
+    "subtitle": "Creamos <b>equipaciones personalizadas</b> de gran calidad, para las necesidades de cada equipo y centro educativo.",
+    "button_primary": "Prepara tu Equipo con Nosotros",
+    "button_secondary": "Ver Muestras"
+  },
+  "manufactura": {
+    "title": "Manufactura Artesanal",
+    "point1": "Tejidos de Primera Calidad",
+    "point2": "Atención al Detalle y Personalización",
+    "point3": "Producción de Proximidad"
+  },
+  "servicios": {
+    "title": "Servicio Profesional",
+    "paragraph": "Desde la primera idea hasta la entrega final, estamos a tu lado para asegurar que cada detalle cumpla con tus expectativas. Por ello, te ofrecemos un servicio profesional integral diseñado para hacer el proceso fácil, eficiente y completamente adaptado a tus necesidades.",
+    "point1": "Asesoramiento Personalizado y Creativo",
+    "point2": "Diseño de Equipaciones a Medida",
+    "point3": "Gestión Integral de Pedidos"
+  },
+  "experiencia": {
+    "title": "Más de 50 años de experiencia",
+    "subtitle": "Claves del Éxito",
+    "point1": "Asesoramiento Personalizado y Creativo",
+    "point2": "Gestión Integral de Pedidos",
+    "point3": "Pasión por la creación manual y la artesanía",
+    "point4": "Compromiso con el cliente",
+    "point5": "Transmisión de conocimiento y valores familiares",
+    "point6": "Construcción de relaciones a largo plazo"
+  },
+  "gallery": {
+    "title": "Ropa Escolar y Deportiva Personalizada",
+    "intro": "Explora nuestra colección de piezas personalizadas para escuelas, clubs escolares y deportivos.",
+    "filter_all": "Todo",
+    "filter_school": "Batas",
+    "filter_sports": "Chándales",
+    "filter_dance": "Maillots"
+  },
+  "contact": {
+    "title": "Información de contacto",
+    "intro": "Estamos aquí para ayudarte. No dudes en ponerte en contacto con nuestro equipo a través de los siguientes medios:"
+  },
+  "footer": {
+    "gallery_link": "Galería",
+    "slogan": "Confección a medida de equipaciones personalizadas para escuelas y clubs deportivos"  
+  }
+}

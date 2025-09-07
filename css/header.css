@@ -1,0 +1,105 @@
+/* Estilos del Header */
+header {
+  background-color: var(--color-fondo-header);
+  padding: var(--h20) 0;
+  box-shadow: var(--sombra-sutil);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--fuente-titulos);
+  font-size: 1.5em;
+  color: var(--color-principal);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .container .logo a img {
+  height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li a {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  text-decoration: none; /* Removemos el subrayado por defecto */
+  color: var(--color-texto-secundario);
+  font-weight: bold;
+  margin: var(--h20);
+  padding-bottom: 3px; /* Espacio para el pseudo-elemento */
+}
+
+header nav ul li a:last-child {
+  margin-right: 0;
+}
+
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Grosor del subrayado */
+  background-color: var(--color-hover);
+  transform: scaleX(0); /* Ocultar inicialmente */
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: var(--color-hover);
+}
+
+header nav ul li a.active {
+  color: var(--color-principal);
+}
+
+header nav ul li a:hover::after {
+  transform: scaleX(1); /* Mostrar el subrayado al hacer hover */
+}
+
+/* Estilos para el selector de idioma */
+.language-selector {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.language-selector button {
+  background-color: transparent;
+  border-color:transparent ;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Para que la bandera no se salga del círculo */
+}
+
+.language-selector button:hover {
+  transform: scale(1.2);
+}
+
+.language-selector .fi {
+  font-size: 100px; /* Ajusta el tamaño de la bandera */
+}

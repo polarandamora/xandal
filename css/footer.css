@@ -1,0 +1,104 @@
+/* Footer styles */
+footer {
+  background-color: var(--color-fondo-header);
+  padding: var(--h20) 0;
+  box-shadow: var(--sombra-sutil-top);
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  margin-top: var(--h80);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #6c757d;
+  transition: color 0.3s;
+  font-weight: bold;
+  position: relative; /* Añade posición relativa para que el ::after funcione */
+}
+
+.text-column a:hover {
+  color: var(--color-hover);
+}
+
+.text-column a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Grosor del subrayado */
+  background-color: var(--color-hover);
+  transform: scaleX(0); /* Ocultar inicialmente */
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-column a:hover::after {
+  transform: scaleX(1); /* Mostrar el subrayado al hacer hover */
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  font-size: 24px;
+  transition: transform .3s ease-in-out;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links a .bi-instagram {
+  color: #E1306C;
+  transform: scale(1.2);
+}
+.social-links a .bi-whatsapp {
+  color: #25D366;
+}
+.social-links a .bi-telephone {
+  color: #5a5a5a;   
+}
+.social-links a .bi-envelope {
+  color: #34b7f1;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #6c757d;
+}
+.footer-logo-div img{
+  max-width: 50px;
+}
+
