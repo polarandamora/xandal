@@ -103,3 +103,60 @@ header nav ul li a:hover::after {
 .language-selector .fi {
   font-size: 100px; /* Ajusta el tamaño de la bandera */
 }
+
+.menu-burger {
+  display: none;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header nav, .language-selector {
+    display: none;
+  }
+
+  header nav.active, .language-selector.active {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  header .container {
+    flex-wrap: wrap;
+  }
+  .logo{
+    margin-left: var(--h20);
+  }
+  .menu-burger {
+    display: block;
+    margin-right: var(--h20);
+  }
+
+  header nav.active {
+    order: 3;
+    
+  }
+
+  header nav.active ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav.active ul li {
+    margin: 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+  header nav.active ul li a {
+    margin: 0;
+  }
+
+  .language-selector.active {
+    order: 4;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

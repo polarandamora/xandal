@@ -18,10 +18,10 @@
   --v20: 20px;
   --v80: 80px;
   --sombra-sutil: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --sombra-sutil-top: 0 -2px 4px rgba(0, 0, 0, .1);
+  --sombra-sutil-top: 0 -2px 4px rgba(0, 0, 0, 0.1);
   --borde-radio: 5px;
   --transicion-suave: 2s ease;
-  --transicion-rapida: .3s ease;
+  --transicion-rapida: 0.3s ease;
 }
 
 /* Estilos Generales *****************************/
@@ -59,7 +59,9 @@ b {
 }
 
 .button.primary:hover {
-  background-color: var(--color-hover); /* Mantenemos el valor directo aquí por ahora */
+  background-color: var(
+    --color-hover
+  ); /* Mantenemos el valor directo aquí por ahora */
   box-shadow: var(--sombra-sutil);
 }
 
@@ -77,6 +79,29 @@ b {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  section {
+    padding: 0px !important;
+  }
+
+  b {
+    color: white;
+    background-color: var(--color-hover);
+    border-radius: var(--borde-radio);
+    text-align: center;
+    padding: 5px 5px;
+  }
+
+  .button.secondary {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-top: 5px;
+  }
+  .button.secondary:hover {
+    background-color: var(--color-hover);
+    box-shadow: var(--sombra-sutil);
+  }
+
   .footer-container {
     flex-direction: column;
     align-items: center;

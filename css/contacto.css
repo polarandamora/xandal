@@ -70,9 +70,11 @@
 @media (max-width: 768px) {
   #contacto-page .container {
     grid-template-columns: 1fr; /* Una sola columna */
+    margin: 0 var(--h20); /* Añadir margen lateral */
   }
-  #contacto-info,
-  #contacto-map {
+  #contacto-info{
     margin-bottom: 30px; /* Añadir espacio entre las secciones en móvil */
   }
+ 
+
 }
