@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const grid = document.getElementById("galeria-grid");
   const filterButtons = document.querySelectorAll(".filter-button");
-  
+
   // Image viewer elements
   const imageViewer = document.getElementById("image-viewer");
   const viewerImage = document.getElementById("viewer-image");
@@ -20,25 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
     grid.innerHTML = '<div class="grid-sizer"></div>'; // Clear grid but keep sizer
 
     const filteredImages = filter === "all" ? imagenes : imagenes.filter(img => {
-      if (filter === 'schools') return img.categoria === 'school';
-      if (filter === 'sports') return img.categoria === 'sport';
-      if (filter === 'dance') return img.categoria === 'dance';
+      if (filter === 'schools') return img.categoria === 'batas';
+      if (filter === 'sports') return img.categoria === 'xandal';
+      if (filter === 'dance') return img.categoria === 'mallots';
     });
 
     currentImages = filteredImages; // Store the filtered images
 
     if (currentImages.length === 0) return;
 
-    currentImages.forEach(({ archivo, nombre, categoria }, index) => {
+    currentImages.forEach(({ archivo, categoria }, index) => {
       const item = document.createElement("div");
       item.className = "grid-item";
       item.dataset.category = categoria;
       item.dataset.index = index; // Store index for later
       item.innerHTML = `
-        <img src="assets/img/galery/${archivo}" alt="${nombre}" />
-        <div class="overlay">
-          <h3>${nombre}</h3>
-        </div>
+        <img src="assets/img/galery/${archivo}" alt="" />
       `;
       grid.appendChild(item);
     });
@@ -57,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function openImageViewer(index) {
     if (index >= 0 && index < currentImages.length) {
       currentIndex = index;
-      const { archivo, nombre } = currentImages[currentIndex];
+      const { archivo } = currentImages[currentIndex];
       viewerImage.src = `assets/img/galery/${archivo}`;
-      viewerImage.alt = nombre;
+      viewerImage.alt = "";
       imageViewer.classList.add("active");
     }
   }
